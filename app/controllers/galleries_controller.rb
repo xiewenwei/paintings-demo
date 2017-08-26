@@ -17,7 +17,7 @@ class GalleriesController < ApplicationController
       flash[:notice] = "Successfully created gallery."
       redirect_to @gallery
     else
-      render :action => 'new'
+      render :new
     end
   end
 
@@ -31,7 +31,7 @@ class GalleriesController < ApplicationController
       flash[:notice] = "Successfully updated gallery."
       redirect_to gallery_url
     else
-      render :action => 'edit'
+      render :edit
     end
   end
 

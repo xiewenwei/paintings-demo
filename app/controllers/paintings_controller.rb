@@ -9,7 +9,7 @@ class PaintingsController < ApplicationController
       flash[:notice] = "Successfully created painting."
       redirect_to @painting.gallery
     else
-      render :action => 'new'
+      render :new
     end
   end
 
@@ -23,7 +23,7 @@ class PaintingsController < ApplicationController
       flash[:notice] = "Successfully updated painting."
       redirect_to @painting.gallery
     else
-      render :action => 'edit'
+      render :edit
     end
   end
 
